@@ -47,7 +47,7 @@ public func routes(_ router: Router) throws {
     // Start an HTTPServer using our EchoResponder
     // We are fine to use `wait()` here since we are on the main thread.
     let server = try HTTPServer.start(
-        hostname: "vapor-try001-vapor-try001.vapor.cloud",
+        hostname: "34.247.6.50",
         port: 8080,
         responder: EchoResponder(),
         upgraders: [ws],
